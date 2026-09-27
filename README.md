@@ -1,14 +1,21 @@
 # BrewVisual Releases
 
-Private staging repository for BrewVisual release artifacts, release notes, and public product information.
+Signed and notarized macOS downloads for BrewVisual, a graphical interface for Homebrew packages.
 
-## Artifact contract
+## Install with Homebrew
 
-- Release archives use the name `BrewVisual-<version>.zip`.
-- Every published archive must contain the signed and notarized `BrewVisual.app` bundle.
-- The source code remains in the permanently private `felix-lorenz/brewvisual` repository.
-- No distribution artifact is uploaded until Developer ID signing and notarization have completed successfully.
+```sh
+brew install --cask felix-lorenz/tap/brewvisual
+```
 
-## Publication gate
+## Requirements
 
-Before this repository becomes public, verify that the release page and archive are accessible without GitHub authentication, recalculate the public archive SHA-256, and update the matching cask in `felix-lorenz/homebrew-tap`.
+- macOS 27 or later
+- Apple Silicon
+- Homebrew
+
+## Direct download
+
+Download `BrewVisual-0.1.0.zip` from the [latest release](https://github.com/felix-lorenz/brewvisual-releases/releases/latest). The release notes list its SHA-256 checksum. Extract the ZIP, then move `BrewVisual.app` to Applications.
+
+The source repository is private. This repository contains distribution archives and release notes only.
