@@ -77,6 +77,8 @@ If Homebrew needs `sudo` for a protected installation step, BrewVisual presents 
 
 Report bugs or request features through [GitHub Issues](https://github.com/felix-lorenz/brewvisual-releases/issues). Include your BrewVisual, macOS, and Homebrew versions, steps to reproduce the problem, and relevant command output. Remove personal information from screenshots and logs before sharing them.
 
+You can also support BrewVisual's development on [Ko-fi](https://ko-fi.com/felixlorenz). The sidebar's **Support me on Ko-fi** link opens this page in your browser.
+
 ## About this repository
 
 This public repository provides product documentation, screenshots, release notes, and distribution archives. The source repository is private.
