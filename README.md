@@ -6,19 +6,25 @@ BrewVisual is available in English and German. Published downloads are signed wi
 
 ## Screenshots
 
-![BrewVisual 0.4.0 dashboard in German](assets/screenshots/dashboard.png)
+![BrewVisual 0.6.0 dashboard in English](assets/screenshots/dashboard.png)
 
-*Dashboard in BrewVisual 0.4.0 (German interface).*
+*Dashboard in BrewVisual 0.6.0 (English interface).*
 
-![BrewVisual 0.4.0 menu bar update overlay in German](assets/screenshots/menu-bar-overlay.png)
+![BrewVisual 0.6.0 menu bar icon with one available update](assets/screenshots/menu-bar-icon.png)
 
-*Menu bar update overlay in BrewVisual 0.4.0 (German interface).*
+*Menu bar icon in BrewVisual 0.6.0 with one available update.*
+
+![BrewVisual 0.6.0 menu bar update overlay in English](assets/screenshots/menu-bar-overlay.png)
+
+*Menu bar update overlay in BrewVisual 0.6.0 (English interface).*
 
 ## Features
 
 - Browse installed formulae and casks, discover packages, and manage taps.
+- Browse and search packages from an installed third-party tap.
 - See available updates, library counts, and recent command activity together on the dashboard.
 - Install, uninstall, and upgrade packages from the main window.
+- Pin and unpin installed formulae and casks to control package upgrades.
 - View available updates in the menu bar and upgrade an individual package or all available packages.
 - Inspect package versions, dependencies, caveats, and project links.
 - Follow command and download progress, and review technical output in the command log.
