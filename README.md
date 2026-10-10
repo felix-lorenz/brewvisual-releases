@@ -36,7 +36,7 @@ BrewVisual is available in English and German. Published downloads are signed wi
 - Apple Silicon (arm64)
 - An existing [Homebrew installation](https://brew.sh)
 
-BrewVisual does not install Homebrew for you.
+BrewVisual does not install Homebrew for you. New users see a three-step introduction covering Homebrew, permissions, and optional login startup. Homebrew must be available before setup can finish. Existing users keep their preferences and can open the guide through **Review introduction** in **Settings → Permissions**.
 
 ## Install with Homebrew
 
@@ -63,19 +63,19 @@ Extract the ZIP and move `BrewVisual.app` to Applications. To update a direct in
 
 ## Package checks and upgrades
 
-By default, BrewVisual checks for updates at launch and every six hours while it is running. These checks run `brew update` to refresh Homebrew and package metadata; they do not upgrade installed formulae or casks.
+By default, BrewVisual checks for updates at launch after any required introduction is complete, and every six hours while it is running. These checks run `brew update` to refresh Homebrew and package metadata; they do not upgrade installed formulae or casks.
 
-You start package installation, removal, and upgrades explicitly. Automatic checks can be disabled in Settings, and **Check now** in the menu bar runs an on-demand check.
+In **Settings → General**, launch checks and periodic checks can be enabled independently. The periodic interval accepts whole hours from 1 to 24. You start package installation, removal, and upgrades explicitly, and **Check now** in the menu bar runs an on-demand check.
 
 ## Start at login
 
-On its first launch from Applications, the installed app registers a login item. At login, BrewVisual opens in the menu bar without a main window or Dock icon. You can disable this with **Open BrewVisual at login** in Settings. If macOS requires approval, use **Open Login Items settings** in BrewVisual Settings.
+Login startup is optional and off for new users. After installing BrewVisual in Applications, enable **Start at login** in the introduction or **Settings → Permissions**. Existing login preferences are preserved. If macOS requires approval, use **Open Login Items settings** in Settings.
 
-Opening BrewVisual from Finder or Spotlight, or choosing **Open BrewVisual** in the menu bar, shows the main window and Dock icon. After a login launch, closing the main window returns the app to menu-bar-only operation.
+At login, BrewVisual opens in the menu bar without a main window or Dock icon when Homebrew is available. If Homebrew is missing, open the app manually to follow its installation guidance. Once setup is complete, opening BrewVisual from Finder or Spotlight, or choosing **Open BrewVisual** in the menu bar, shows the main window and Dock icon. Closing all app windows returns it to menu-bar-only operation.
 
 ## App Management and administrator access
 
-When upgrading a cask, macOS may require App Management permission. BrewVisual checks access when possible and explains how to recover if macOS denies it. Follow the app's guidance to open **System Settings → Privacy & Security → App Management** and enable access for BrewVisual.
+When upgrading a cask, macOS may require App Management permission. BrewVisual cannot automatically verify its current authorization. It provides guidance in **Settings → Permissions** and explains how to recover after an observed access failure. Use **Open System Management** to open **System Settings → Privacy & Security → App Management** and enable access for BrewVisual. If BrewVisual is missing, add it with **+**.
 
 If Homebrew needs `sudo` for a protected installation step, BrewVisual presents a secure administrator password prompt. The password is passed only to `sudo`; it is not stored or included in the command log.
 
